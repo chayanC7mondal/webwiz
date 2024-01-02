@@ -1,0 +1,89 @@
+span{
+color: #fe0606;    
+}
+*{
+    box-sizing:border-box ;
+}
+h2{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:normal ;
+}
+.detail{
+    font-size: 20px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    background-color: #ffff
+;
+border: 1px solid #ccc;
+}
+
+.mainheading{
+    text-align: center;
+
+}
+#cvv{
+    width: 15%;
+}
+input[type="submit"]{
+    background-color: #4daea1;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 20px;
+   border-radius: 5px;
+   cursor:pointer;
+}
+input[type="reset"]{
+    background-color: #e96a0e;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background-color: #00b31e;
+}
+input[type="reset"]:hover{
+    background-color: #d90303;
+}
+.noss{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.noss1{
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+
+}

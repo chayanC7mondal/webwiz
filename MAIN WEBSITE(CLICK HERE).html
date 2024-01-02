@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAYAN'S WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About me</a></li>
+          <li><button id="changeColorBtn">Change Theme</button></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Start Your Day With Fresh Coffee</h2>
+        <p>
+          Coffee is a popular and beloved beverage enjoyed by 
+          people around the world.Awaken your senses with a steaming cup of liquid motivation and 
+        
+          "Read the Description Word Document."
+        </p>
+        <button class="order"><a href="payment form.html" class="payment">Order Now</a></button>
+      </div>
+      <div class="image-gallery" >
+        <img src="coffee1.jpg" alt="Image 1">
+        <img src="coffee2.jpg" alt="Image 2">
+        <img src="coffee3.jpg" alt="Image 3">
+        <img src="coffee4.jpg" alt="Image 4">
+        <img src="coffee5.jpg" alt="Image 5">
+        <img src="coffee6.jpg" alt="Image 6">
+       
+      </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Compressions</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="links">
+            <li><a href="#">Free Designs</a></li>
+            <li><a href="#">Latest Designs</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Popular Designs</a></li>
+            <li><a href="#">Art Skills</a></li>
+            <li><a href="#">New Uploads</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your email" required>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+         
+        </div>
+      </div><br>
+      
+      <br><br>
+      <hr color="#a59b96">
+      <br>
+      <div>
+        <p class="last"><marquee direction="right" >Created by - CHAYAN MONDAL  &nbsp<a href="#" class="copyright">&copy;</a></marquee></p>
+
+      </div>
+      <br>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+     closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+const button = document.getElementById("changeColorBtn");
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function changeBackgroundColor() {
+  document.body.style.backgroundColor = getRandomColor();
+}
+button.addEventListener("click", changeBackgroundColor);
+    </script>
+    
+  </body>
+</html>
